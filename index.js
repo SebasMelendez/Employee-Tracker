@@ -19,7 +19,7 @@ const questions = [
       type: "list",
       name: "selection",
       message: "What licence will you be using?",
-      choices: ["View All Employees", "Add Employee", "Update Employee Role", "View All roles", "Add Roles","View All Departments", "Add Department"],
+      choices: ["View All Departments", "View All roles", "View All Employees", "Add Department", "Add a Role", "Add Employee", "Update an Employee"],
   }
 ];
 
@@ -44,7 +44,7 @@ function serverCall() {
 async function asyncStart() {
   console.log('Starting...');
   await serverCall();
-  init()
+  // init()
 }
 
 asyncStart();

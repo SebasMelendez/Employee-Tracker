@@ -32,7 +32,7 @@ function decode(selection){
             fwdResult.method = "post"
         break
         case "Update an Employee":
-            fwdResult.fwdURL = url + 'departments/'
+            fwdResult.fwdURL = url + 'employees/'
             fwdResult.method = "put"
         break
     }

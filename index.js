@@ -1,6 +1,8 @@
 const inquirer = require('inquirer');
 const cTable = require('console.table');
 const server = require('./server')
+const selectionFwd = require('./utils/selectionFwd')
+const {makeGet} = require('./utils/requestor')
 
 function demo() {
     console.table([
@@ -28,7 +30,15 @@ async function init() {
   inquirer.prompt(questions)
   .then(responses => {
       const {selection} = responses
-      
+      let callObj = selectionFwd.decode(selection)
+      if(callObj.method == 'get'){
+        console.log(callObj)
+        makeGet(callObj)
+        
+      }
+      else{
+        console.log("not Get")
+      }
       init()
   })
 }
@@ -44,7 +54,7 @@ function serverCall() {
 async function asyncStart() {
   console.log('Starting...');
   await serverCall();
-  // init()
+  init()
 }
 
 asyncStart();

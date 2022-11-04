@@ -1,7 +1,6 @@
-const request = require('request');
-
-
 function makeGet(param){
+    
+    // add direct SQL calls here
 
 }
 

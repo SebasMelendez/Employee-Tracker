@@ -1,9 +1,8 @@
+//@collapse
 const express = require("express");
 const router = express.Router();
 const db = require("../../db/connection");
 const inputCheck = require("../../utils/inputCheck");
-
-["Update an Employee"]
 
 router.get("/employees", (req, res) => {
   const sql = `SELECT employee.id, first_name AS 'first name', last_name AS 'last name', role.title AS Title, employee.manager_id FROM employee

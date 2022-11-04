@@ -1,4 +1,4 @@
-// @collaps
+// @
 function decode(selection){
 
     // const choices = ["View All Departments", "View All roles", "View All Employees", "Add Department", "Add a Role", "Add Employee", "Update an Employee"]

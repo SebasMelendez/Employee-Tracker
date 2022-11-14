@@ -6,6 +6,7 @@
   This app will show you and allow you to manage personella from an office 
 
   ![image](./Screenshot%202022-11-13%20212243.jpg)
+  Video available [here](https://streamable.com/uqa76g)
   
 ### Made with:
   
